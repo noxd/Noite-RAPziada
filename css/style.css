@@ -58,6 +58,10 @@ a:active {
 	transition-duration: 0.5s;
 }
 
+.meu-botao{
+	margin-top: 15px;
+}
+
 .span_rap{
 	color: darkred;
 }

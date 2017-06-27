@@ -9,9 +9,9 @@
 	<script	src="./js/jquery.min.js"></script>
 	<script	src="./bootstrap/js/bootstrap.min.js"></script>
 	<script	src="./bootstrap/plugins/bootstrap-carousel.js"></script>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="./css/mobile-style.css" media="(max-width: 400px)" />
-	<link rel="stylesheet" type="text/css" href="./css/desktop-style.css" media="(min-width: 401px)" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript">
 $(document).ready(function(){
      $("#myCarousel").carousel({
@@ -19,11 +19,54 @@ $(document).ready(function(){
      });
 });
 
+	function go(link) {
+		window.location.href = link;
+	}
 
 </script>
 
 </head>
 <body>
+
+
+<div class="header">
+<div class="col-sm-3 col-xs-9">
+		<h3>Noite da <span class="span_rap">RAP</span>ziada</h3>
+	</div>
+	<div class="col-sm-9">
+		<ul  class="menu-desktop">
+			<li><a href="./index.html">Home</a></li>
+			<li>|</li>
+			<li><a href="">Notícias</a></li>
+			<li>|</li>
+			<li><a href="">Nacional</a></li>
+			<li>|</li>
+			<li><a href="">Internacional</a></li>
+			<li>|</li>
+			<li><a href="">Sobre</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3">
+		<div class="dropdown menu-mobile pull-right meu-botao">
+		  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <span class="glyphicon glyphicon-option-vertical botaaaao"></span>
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dLabel">
+		    <li><a href="./index.html">Home</a></li>
+			<li>|</li>
+			<li><a href="">Notícias</a></li>
+			<li>|</li>
+			<li><a href="">Nacional</a></li>
+			<li>|</li>
+			<li><a href="">Internacional</a></li>
+			<li>|</li>
+			<li><a href="">Sobre</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+
 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
     <!-- Carousel indicators -->
     <ol class="carousel-indicators">
@@ -64,89 +107,81 @@ $(document).ready(function(){
     </a>
 </div>
 
-<header>
-	<h3>Noite da <span class="span_rap">RAP</span>ziada</h3>
 
-	<ul>
-		<li><a href="./index.html">Home</a></li>
-		<li>|</li>
-		<li><a href="">Notícias</a></li>
-		<li>|</li>
-		<li><a href="">Nacional</a></li>
-		<li>|</li>
-		<li><a href="">Internacional</a></li>
-		<li>|</li>
-		<li><a href="">Sobre</a></li>
-	</ul>
-</header>
-<main>
-	<div class="barra-noticias">
-		<p>Últimas notícias</p>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4 primeira-noticia">
-					<div class="imagem">
-						<a href="#" />
-						<img src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
-						<div class="legenda">
-							<figcaption>Affair Gratuito! Nova mixtape do 0800 crew</figcaption>
-						</div>
-					</div>
-			</div>
-			<div class="col-sm-4">
-					<div class="imagem">
-						<a href="#" />
-						<img src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
-						<div class="legenda">
-							<figcaption>Affair Gratuito! Nova mixtape do 0800 crew</figcaption>
-						</div>
-					</div>
-			</div>
-			<div class="col-sm-4">
-					<div class="imagem">
-						<a href="#" />
-						<img src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
-						<div class="legenda">
-							<figcaption>Affair Gratuito! Nova mixtape do 0800 crew</figcaption>
-						</div>
-					</div>
-			</div>
-			<div class="col-sm-4 primeira-noticia">
-					<div class="imagem">
-						<a href="#" />
-						<img src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
-						<div class="legenda">
-							<figcaption>Affair Gratuito! Nova mixtape do 0800 crew</figcaption>
-						</div>
-					</div>
-			</div>
-			<div class="col-sm-4">
-					<div class="imagem">
-						<a href="#" />
-						<img src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
-						<div class="legenda">
-							<figcaption>Affair Gratuito! Nova mixtape do 0800 crew</figcaption>
-						</div>
-					</div>
-			</div>
-			<div class="col-sm-4">
-					<div class="imagem">
-						<a href="#" />
-						<img src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
-						<div class="legenda">
-							<figcaption>Affair Gratuito! Nova mixtape do 0800 crew</figcaption>
-						</div>
-					</div>
-			</div>
+<div class=" barra-noticias">
+	<p>Últimas notícias</p>
+</div>
 
+<div class="container-fluid noticias-container">
+	<div class="row">
+		<div class="col-sm-4 box-noticias">
+			<div class="noticia" onclick="go( 'https://www.youtube.com/watch?v=-C-nEbI1OdY&list=PL1EcsfCAgtknOcFGeyH1caakp0661k90k' )">
+				<div class="imagem">
+					<img class="img-responsive" src="https://i.ytimg.com/vi/-C-nEbI1OdY/maxresdefault.jpg" />
+					<div class="legenda">
+						<figcaption>Bizum acaba de lançar Contrastes, sua nova mixtape</figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 box-noticias">
+			<div class="noticia" onclick="go( 'https://www.youtube.com/watch?v=0EahMkt6I78' )">
+				<div class="imagem">
+					<img class="img-responsive" src="https://i.ytimg.com/vi/0EahMkt6I78/maxresdefault.jpg" />
+					<div class="legenda">
+						<figcaption>CYPHER NO TURNO! Ouça agora</figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 box-noticias">
+			<div class="noticia" onclick="go( 'https://www.youtube.com/watch?v=cFDcFF4R4Z4' )">
+				<div class="imagem">
+					<img class="img-responsive" src="https://i.ytimg.com/vi/4bCAd5RclXE/maxresdefault.jpg" />
+					<div class="legenda">
+						<figcaption>Poetas no topo 3.2 já está disponível!</figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 box-noticias">
+			<div class="noticia" onclick="go( 'https://www.youtube.com/watch?v=9G8pcekN6sM&list=PL0OSlx9n_wHghaPSQd82o8xPaRf5-zqWJ' )">
+				<div class="imagem">
+					<img class="img-responsive" src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/01/maxresdefault-19.jpg" />
+					<div class="legenda">
+						<figcaption>Ouça agora Cogito Ergo Verso de Álvaro Mamute</figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 box-noticias">
+			<div class="noticia" onclick="go( 'https://www.youtube.com/watch?v=iRJJAOaVtjw&list=PLPe3Qwvr7nPVNDMqr8Wq8gPHdhJX1YdRT' )">
+				<div class="imagem">
+					<img class="img-responsive" src="http://www.rapnacionaldownload.com.br/wp-content/uploads/2017/06/maxresdefault-1.jpg" />
+					<div class="legenda">
+						<figcaption>Nova mixtape do 0800 crew, Affair Gratuito!</figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 box-noticias">
+			<div class="noticia" onclick="go( 'https://www.youtube.com/watch?v=K8yyj7BvNg8' )">
+				<div class="imagem">
+					<img class="img-responsive" src="https://i.ytimg.com/vi/C5t6G_I6ATg/maxresdefault.jpg" />
+					<div class="legenda">
+						<figcaption>Frenesi de Gabelegal foi lançado! Não perca</figcaption>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</main>
-<footer>
+</div>
+
+<div class="footer">
 	<img src="http://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" />
 	<img src="http://www.iconsplace.com/icons/preview/white/twitter-256.png" />
 	<p>Nenhum direito reservado por José Vítor Heringer e Miguel Fraga © </p>
-</footer>
+</div>
+
 </body>
 </html>

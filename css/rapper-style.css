@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+
+.footer{
+	background-color: black;
+	padding: 5px;
+}
+
+.footer img{
+	float: right;
+	width: 30px;
+	margin: 0px 10px 0px 5px; 
+}
+
+.footer p{
+	color: white;
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+.header{
+
+	background-color: black;
+	margin-top: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	opacity: 0.6;
+	z-index: 999;
+}
+
+.header:hover {
+	opacity: 1.0;
+	transition-duration: 0.5s;
+}
+
+.meu-botao{
+	margin-top: 15px;
+}
+
+.span_rap{
+	color: darkred;
+}
+
+h3{
+	color: white;
+	float: left;
+	margin-left: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+ul{
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+li{
+	color: white;
+	display: inline;
+	padding-left: 15px;
+	font-family: 'Oswald', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+  color: darkred;
+  transition: 0.4s;
+}
+	
+body{
+	background-image: url(http://wallpapercave.com/wp/DM6hvet.jpg);
+}
+
+@media screen and (max-width: 769px) {
+	.header  .menu-desktop{
+		display: none;
+	}
+	.header  .menu-mobile{
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 770px) {
+	.header  .menu-desktop{
+		display: inline;
+	}
+	.header  .menu-mobile{
+		display: none;
+	}
+}
+
+.rapper-img{
+	width: 100%;
+}
+
+.box-materia{
+	background-color: black;
+}
+
+.box-materia:hover{
+	outline: solid 1px darkred;
+}
+
+.box-materia h2{
+	color: white;
+}
+
+.box-materia p{
+	margin-top: 30px;
+	color: white;
+}
